@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Highlight Section */
+.highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.car-info {
+    max-width: 50%;
+}
+
+.car-info h2 a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.car-info p {
+    font-size: 18px;
+}
+
+.btn-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reviews Section */
+.reviews ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.reviews ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Upgrades Section */
+.upgrades .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.upgrades .grid a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+.upgrades .grid div {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.upgrades .grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.upgrades .grid p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .car-info {
+        max-width: 100%;
+    }
+
+    .upgrades .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+/* Footer Social Media Icons */
+p {
+    text-align: center; /* Centers the icons */
+}
+
+p a {
+    display: inline-block;
+    margin: 0 10px; /* Adds space between icons */
+}
+
+p a img {
+    width: 40px;  /* Adjust size as needed */
+    height: 40px;
+    object-fit: contain;
+}

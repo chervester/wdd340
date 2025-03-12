@@ -1,0 +1,248 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/checkered-bg.png'); /* Ensure correct path */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    position: relative;
+}
+
+/* Centering the Title */
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+/* Right-align "My Account" */
+.my-account {
+    margin-left: auto; /* Pushes it to the far right */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Highlight Section */
+.highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.car-info {
+    max-width: 50%;
+}
+
+.car-info h2 a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.car-info p {
+    font-size: 18px;
+}
+
+.btn-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-container button:hover {
+    background-color: #0056b3;
+}
+
+.car-image {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Upgrades Section */
+.upgrades {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.upgrades h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.upgrades .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px;
+}
+
+.upgrades .grid div {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.upgrades .grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.upgrades .grid p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Reviews Section */
+.reviews {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reviews ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Social Media Icons */
+footer .social-icons {
+    text-align: center;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .upgrades .grid {
+        flex-wrap: wrap;
+    }
+
+    .highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .car-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .upgrades .grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
