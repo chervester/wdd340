@@ -2,19 +2,20 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-// Set EJS as the template engine
+// Set the views directory and EJS as the template engine
+app.set('views', path.join(__dirname, 'views')); // Ensure views are correctly set
 app.set('view engine', 'ejs');
 
-// Set public folder for static assets
+// Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Import routes
-const homeRoute = require('./routes/home'); // Ensure this file exists
+// Import and use routes
+const homeRoute = require('./routes/home');
 app.use('/', homeRoute);
 
-// Start server
+// Start the server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running on port ${port}`);
 });
