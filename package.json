@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "build": "echo 'No build process defined'",
+    "lint": "echo 'Add ESLint or Prettier for linting'",
+    "test": "echo 'No test specified' && exit 1"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -16,7 +19,7 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "license": "MIT"
 }
