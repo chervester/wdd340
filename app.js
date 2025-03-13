@@ -4,11 +4,11 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Set the views directory and EJS as the template engine
-app.set('views', path.join(__dirname, 'views')); // Ensure views are correctly set
+// Set views directory and EJS as the template engine
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// Serve static files from the public directory
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Import and use routes
@@ -17,5 +17,5 @@ app.use('/', homeRoute);
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on http://localhost:${port}`);
 });
